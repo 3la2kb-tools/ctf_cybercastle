@@ -1,0 +1,16 @@
+extends layout
+block content 
+
+ul
+  each challenge in challenges
+    li= challenge.name
+        h2= challenge.description
+        p(style="color:green")= challenge.points
+        form(action="post",class=`${challenge.solved}`)
+            h2 submit flag
+            h1= msg
+            #input-field 
+            input(type="text",name="flag",id="flag",placeholder="CyberCastle{5up3r_1337_fl4g}")
+            input(type="submit",value="submit")
+
+//WIP

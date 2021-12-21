@@ -1,0 +1,11 @@
+extends layout
+block content 
+
+  form(action="post")
+    h2 Register
+    h1= msg
+    #input-field 
+      input(type="text",name="username",id="username",placeholder="Enter Username")
+    #input-field 
+      input(type="password",name="password",id="password",placeholder="Enter Password")
+    input(type="submit",value="register")

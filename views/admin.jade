@@ -1,0 +1,15 @@
+extends layout
+block content 
+
+  form(action="post")
+    h2 Upload
+    h1= msg
+    #input-field 
+      input(type="text",name="name",id="name",placeholder="name")
+    #input-field 
+      input(type="text",name="description",id="description",placeholder="description")
+    #input-field 
+      input(type="text",name="flag",id="flag",placeholder="CyberCastle{5up3r_1337_fl4g}")
+    #input-field 
+      input(type="text",name="points",id="points",placeholder="150")
+    input(type="submit",value="add")
